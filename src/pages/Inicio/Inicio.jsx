@@ -1,5 +1,6 @@
 import Header from "../../components/Header";
 import Carousel from "./components/Carousel";
+import Tendencias from './components/Tendencias';
 import VerMas from "./components/verMas";
 import Footer from "../../components/Footer";
 
@@ -8,6 +9,7 @@ function Inicio(){
         <div>
             <Header />
             <Carousel />
+            <Tendencias />
             <VerMas />
             <Footer />
         </div>
