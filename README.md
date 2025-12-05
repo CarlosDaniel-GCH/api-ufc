@@ -1,9 +1,38 @@
-# API - UFC
+# 🥋 UFC Web - Consumo de API
 
-## Consumo de la api de UFC
--Visualizar peleadores
--Visualizar rankings
--Ejemplo de como se podria implementar el consumo de esta API
+Este proyecto es una aplicación web construida con **React** y **Tailwind CSS** que permite visualizar información clave del mundo de la UFC, como listados de peleadores y rankings, mediante el consumo de una API externa.
 
-## Pasos para desplegar el proyecto
+## 🚀 Tecnologías Utilizadas
+
+| Tecnología | Descripción |
+| :--- | :--- |
+| **React** | Biblioteca principal para la construcción de la interfaz de usuario. |
+| **Tailwind CSS** | Framework CSS utility-first para un diseño rápido y responsivo. |
+| **React Router DOM** | Para el manejo de las rutas y la navegación (pestañas). |
+| **Axios** | Cliente HTTP basado en promesas para realizar las llamadas (fetch) a la API. |
+
+---
+
+## ⚙️ Instalacion de dependencias:
+
+Para poner en marcha el proyecto localmente, sigue estas indicaciones:
+
+### Pasos para desplegar el proyecto
+```bash
 npm install
+```
+
+### Para el manejo de pestañas
+```bash
+npm install react-router-dom
+```
+
+### AXIOS para hacer el fetch a la API
+```bash
+npm install axios
+```
+
+## Iniciar el proyecto
+```bash
+npm run dev
+```
