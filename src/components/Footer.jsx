@@ -1,5 +1,5 @@
 import React from 'react';
-import logoUFC from '../assets/UFC-LOGO.png';
+import logoUFC from '../assets/img/UFC-LOGO.png';
 
 function Footer(){
     const handleContactClick = () => {

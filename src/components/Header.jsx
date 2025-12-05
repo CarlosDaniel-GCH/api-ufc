@@ -1,5 +1,5 @@
 import React from 'react';
-import ufcLogo from '../assets/UFC-LOGO.png';
+import ufcLogo from '../assets/img/UFC-LOGO.png';
 
 function Header(){
     return(
