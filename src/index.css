@@ -49,6 +49,33 @@ body {
   width: 100%; /* Expande al 100% al hacer hover */
 }
 
+/* ======= CAROUSEL =======  */
+.btn::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5%;
+  width: 0;
+  background-color: red;
+  z-index: -1;
+  transition: width 0.8s ease-in-out;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.carousel-btn.active,
+.carousel-btn:hover {
+  background-color: rgb(194, 2, 2);
+}
+
 /* ======= VER MAS ======= */
 .boton-verMas {
   position: relative; 
