@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ufcLogo from '../assets/img/UFC-LOGO.png';
 
 function Header(){
@@ -8,9 +9,15 @@ function Header(){
             {/* Navbar-1 (Enlaces de Navegación Interna) */}
             <nav className="navbar-links">
                 <ul className="list-none flex gap-5 md:gap-8 h-full items-center">
-                    <li><a href="" className="header-link">INICIO</a></li>
-                    <li><a href="" className="header-link">RANKINGS</a></li>
-                    <li><a href="" className="header-link">PELEADORES</a></li>
+                    <li>
+                        <Link to="/" className="header-link">INICIO</Link>
+                    </li>
+                    <li>
+                        <Link to="/rankings" className="header-link">RANKINGS</Link>
+                    </li>
+                    <li>
+                        <Link to="/peleadores" className="header-link">PELEADORES</Link>
+                    </li>
                 </ul>
             </nav>
 
