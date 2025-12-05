@@ -3,7 +3,7 @@ import ufcLogo from '../assets/img/UFC-LOGO.png';
 
 function Header(){
     return(
-        <header className="fixed top-0 left-0 z-1000 w-full h-[70px] bg-black text-white flex justify-between items-center px-12 md:px-[50px]">
+        <header className="fixed top-0 left-0 z-[999] w-full h-[70px] bg-black text-white flex justify-between items-center px-12 md:px-[50px]">
         
             {/* Navbar-1 (Enlaces de Navegación Interna) */}
             <nav className="navbar-links">
