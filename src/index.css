@@ -18,3 +18,36 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
 }
+
+/* Animacion para el HEADER */
+.header-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  position: relative; /* Necesario para posicionar el ::after */
+  padding: 5px 0;
+  transition: color 0.3s;
+  font-size: 14px;
+}
+
+/* Cambio de Color al Hover */
+.header-link:hover {
+  color: rgb(200, 0, 0);
+}
+
+/* Configuración de la Línea (::after) */
+.header-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%; /* Inicialmente oculta */
+  height: 2px;
+  background-color: rgb(194, 2, 2); /* El color rojo de la línea */
+  transition: width 0.3s ease-in-out;
+}
+
+/* Animación de la Línea al Hover */
+.header-link:hover::after {
+  width: 100%; /* Expande al 100% al hacer hover */
+}
