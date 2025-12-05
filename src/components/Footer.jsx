@@ -21,7 +21,7 @@ function Footer(){
         {/* Sección de Contacto (contacto-footer) */}
         {/* Se utiliza `onClick` para replicar la funcionalidad del `data-url` */}
         <div 
-            className="flex items-center justify-center w-[12%] h-full text-xs md:text-[12px] text-white cursor-pointer transition duration-200"
+            className="flex items-center justify-center w-[12%] h-full text-xs md:text-[16px] text-white cursor-pointer transition duration-200"
             onClick={handleContactClick}
             role="button" // Para accesibilidad
             aria-label="Ir a la página de contacto/FAQ de UFC"
