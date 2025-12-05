@@ -76,6 +76,73 @@ body {
   background-color: rgb(194, 2, 2);
 }
 
+/* ======= TENDENCIAS =======  */
+.contenedor-tendencias::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.contenedor-tendencias:hover::before {
+  transform: scale(1.1);
+}
+
+.contenedor-tendencias>* {
+  position: relative;
+  z-index: 1;
+}
+
+.ct-1::before {
+  background-image: url('assets/img/Imagen-Topuria.webp');
+}
+
+.ct-2::before {
+  background-image: url('assets/img/Imagen-Poatan.jpg');
+}
+
+.ct-3::before {
+  background-image: url('assets/img/Juego-UFC-5.avif');
+}
+
+.ct-4::before {
+  background-image: url('assets/img/Imagen-Amanda-Nunes.jpeg');
+}
+
+.section-2 .contenido::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.section-2 .img-1::before {
+  background-image: url('assets/img/Jon-Aspinall.webp');
+}
+
+.section-2 .img-2::before {
+  background-image: url('assets/img/CharlesOliveira.jpg');
+}
+
+/* Efecto de zoom al pasar el mouse */
+.section-2 .contenido:hover::before {
+  transform: scale(1.1);
+}
+
 /* ======= VER MAS ======= */
 .boton-verMas {
   position: relative; 
