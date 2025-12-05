@@ -19,7 +19,7 @@ body {
   min-height: 100vh;
 }
 
-/* Animacion para el HEADER */
+/* ======= HEADER =======  */
 .header-link {
   text-decoration: none;
   color: white;
@@ -30,12 +30,10 @@ body {
   font-size: 14px;
 }
 
-/* Cambio de Color al Hover */
 .header-link:hover {
-  color: rgb(200, 0, 0);
+  color: red;
 }
 
-/* Configuración de la Línea (::after) */
 .header-link::after {
   content: '';
   position: absolute;
@@ -43,11 +41,40 @@ body {
   bottom: 0;
   width: 0%; /* Inicialmente oculta */
   height: 2px;
-  background-color: rgb(194, 2, 2); /* El color rojo de la línea */
+  background-color: red; /* El color rojo de la línea */
   transition: width 0.3s ease-in-out;
 }
 
-/* Animación de la Línea al Hover */
 .header-link:hover::after {
   width: 100%; /* Expande al 100% al hacer hover */
+}
+
+/* ======= VER MAS ======= */
+.boton-verMas {
+  position: relative; 
+  z-index: 1; 
+  overflow: hidden;
+  color: black;
+  transition: color 0.5s ease-in-out;
+}
+
+.boton-verMas::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4%; 
+  width: 0;
+  background-color: red;
+  z-index: 9999; 
+  
+  transition: width 0.5s ease-in-out;
+}
+
+.boton-verMas:hover::before {
+  width: 100%;
+}
+
+.boton-verMas:hover {
+  color: white; 
 }
