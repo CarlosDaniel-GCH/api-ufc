@@ -9,7 +9,6 @@ Este proyecto es una aplicación web construida con **React** y **Tailwind CSS**
 | **React** | Biblioteca principal para la construcción de la interfaz de usuario. |
 | **Tailwind CSS** | Framework CSS utility-first para un diseño rápido y responsivo. |
 | **React Router DOM** | Para el manejo de las rutas y la navegación (pestañas). |
-| **Axios** | Cliente HTTP basado en promesas para realizar las llamadas (fetch) a la API. |
 
 ---
 
@@ -25,11 +24,6 @@ npm install
 ### Para el manejo de pestañas
 ```bash
 npm install react-router-dom
-```
-
-### AXIOS para hacer el fetch a la API
-```bash
-npm install axios
 ```
 
 ## Iniciar el proyecto
