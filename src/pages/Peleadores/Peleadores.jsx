@@ -7,7 +7,6 @@ function Peleadores() {
     const [busqueda, setBusqueda] = useState("");
     const [filtrados, setFiltrados] = useState([]);
 
-    // 🔹 Fetch a la API
     useEffect(() => {
         async function fetchPeleadores() {
             try {
@@ -26,7 +25,7 @@ function Peleadores() {
                 const limitados = lista.slice(0, 50);
 
                 setPeleadores(limitados);
-                setFiltrados(limitados); // mostrar todos al iniciar
+                setFiltrados(limitados);
             } catch (err) {
                 console.error(err);
             }
@@ -54,7 +53,6 @@ function Peleadores() {
         <div>
             <Header />
             <div className="mt-28">
-                {/* Input de búsqueda */}
                 <div className="contenedor-busqueda flex justify-center my-8 gap-4">
                     <input
                         type="text"
@@ -71,8 +69,7 @@ function Peleadores() {
                     </button>
                 </div>
 
-                {/* Cards dinámicas */}
-                <div className="peleadores grid grid-cols-5 gap-4 px-3 justify-items-center">
+                <div className="peleadores grid grid-cols-2 md:grid-cols-5 gap-4 px-3 justify-items-center">
                     {filtrados.length === 0 ? (
                         <p className="error-peleadores w-[300px] text-center mb-[30vh] mt-[20vh] col-span-5">
                             No se encontraron peleadores.
