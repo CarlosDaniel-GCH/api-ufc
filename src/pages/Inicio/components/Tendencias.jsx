@@ -3,8 +3,8 @@ import UFCAviator from '../assets/img/ufc-aviator.png';
 
 function Tendencias(){
     return(
-        <section className="w-full h-auto mt-12">
-            <h1 className="font-bold text-center text-black text-3xl mb-5">TENDENCIAS</h1>
+        <section className="flex flex-col gap-4 w-full h-auto mt-12">
+            <h1 className="font-bold text-center text-black text-3xl">TENDENCIAS</h1>
             <div className="flex flex-col md:flex-row justify-center gap-2 w-full h-70 px-2">
                 <a 
                     href="https://www.dazn.com/es-ES/news/mma/ilia-topuria-peso-ligero-ufc-por-que-deja-ser-campeon-peso-pluma-principales-reglas-esta-division-quien-es-actual-campeon/4jz300mmvcwv1ie44mgq9xag4" 
@@ -48,14 +48,14 @@ function Tendencias(){
                 </a>
             </div>
 
-            <div className="section-2 flex justify-center  w-full h-[500px] space-x-6 px-4 mt-7">
+            <div className="section-2 flex flex-col md:flex-row w-full h-[500px] gap-4 px-4 my-7">
                 <a 
                     href="https://www.espn.com.gt/mma/nota?_slug_=jon-jones-pereira-aspinall-ufc&id=14416434"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full"
+                    className="w-full relative"
                 >
-                    <div className="contenido img-1 w-full h-[300px] h-full text-white relative overflow-hidden cursor-pointer">
+                    <div className="contenido img-1 w-full h-[300px] md:h-full text-white relative overflow-hidden cursor-pointer">
                         <h2 className="absolute bottom-0 text-[1.3rem] p-5 z-10 font-bold">JON JONES RECHAZA LA OFERTA DE UFC PARA PELEAR CON TOM ASPINALL</h2>
                     </div>
                 </a>
@@ -64,15 +64,15 @@ function Tendencias(){
                     href="https://www.espn.com.gt/mma/nota?_slug_=jon-jones-pereira-aspinall-ufc&id=14416434"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full"
+                    className="w-full relative"
                 >
-                    <div className="contenido img-2 w-full h-[300px] h-full text-white relative overflow-hidden cursor-pointer">
+                    <div className="contenido img-2 w-full h-[300px] md:h-full text-white relative overflow-hidden cursor-pointer">
                         <h2 className="absolute bottom-0 text-[1.3rem] p-5 z-10 font-bold">CHARLES OLIVEIRA DICE QUE PUEDE NOQUEAR A ILIA TOPURIA</h2>
                     </div>
                 </a>
             </div>
 
-            <h1 className="font-bold text-center text-black text-3xl mt-8 mb-4">PATROCINADORES</h1>
+            <h1 className="font-bold text-center text-black text-3xl md:mt-1 mt-28">PATROCINADORES</h1>
             <div className="flex flex-col md:flex-row w-full h-auto overflow-hidden gap-4 px-4">
                 <a 
                     href="https://airestech.com/?utm_source=UFC&utm_medium=ROS&utm_campaign=Maycee_Chandler"
