@@ -12,7 +12,7 @@ function Header() {
                 <img 
                     src={ufcLogo}
                     alt="UFC Logo" 
-                    className="block max-h-[35px] md:max-h-[45px] w-auto cursor-pointer"
+                    className="block w-full max-h-[200px] md:max-h-[100px] w-auto cursor-pointer"
                 />
             </div>
 
