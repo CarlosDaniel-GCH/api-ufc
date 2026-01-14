@@ -33,7 +33,6 @@ function Rankings() {
 
                 <div className="grid grid-cols-1 md:grid-cols-4 peleadores-auto-fit gap-5 max-w-[1500px] my-10 mx-auto px-5">
 
-                    {/* ---------- RENDER DINÁMICO ---------- */}
                     {rankings.map((categoria, index) => {
                         const isPoundForPound = categoria.categoryName.includes("Pound-for-Pound");
 
@@ -50,7 +49,7 @@ function Rankings() {
                                     {categoria.categoryName}
                                 </h2>
 
-                                {/* Campeón (si corresponde) */}
+                                {/* Campeón */}
                                 {!isPoundForPound && champName && (
                                     <>
                                         <p className="font-bold text-base">{champName}</p>
