@@ -104,7 +104,10 @@ function Peleadores() {
                     )}
                 </div>
             </div>
-            <Footer />
+
+            <div className="mt-[229px] md:mt-1">
+                <Footer />
+            </div>
         </div>
     );
 }
