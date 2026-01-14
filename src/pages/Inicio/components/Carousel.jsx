@@ -35,7 +35,7 @@ function Carousel(){
         if (newIndex >= totalSlides) {
             newIndex = 0;
         } else if (newIndex < 0) {
-            newIndex = totalSlides - 1;
+            newIndex = totalSlides;
         }
 
         // Aplica la transformación CSS al track usando la referencia
@@ -105,7 +105,7 @@ function Carousel(){
                     <div>
                         <button className="btn btn-secondary btn-Jamahal-Rountree relative py-5 px-10 bg-white text-black border-none rounded-md mt-5 font-bold cursor-pointer text-xl overflow-hidden z-0 mt-[360px]">
                             <a 
-                            href="https://www.ufcespanol.com/event/ufc-fight-night-june-21-2025" 
+                            href="https://www.ufcespanol.com/event/ufc-fight-night-june-21-2025"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="
@@ -132,6 +132,7 @@ function Carousel(){
             <div className='absolute bottom-2.5 left-1/2 -translate-x-1/2 flex space-x-2.5'>
                 <button onClick={() => moveToSlide(0)} className={getButtonClass(0)}></button>
                 <button onClick={() => moveToSlide(1)} className={getButtonClass(1)}></button>
+                <button onClick={() => moveToSlide(2)} className={getButtonClass(2)}></button>
             </div>
         </section>
     )

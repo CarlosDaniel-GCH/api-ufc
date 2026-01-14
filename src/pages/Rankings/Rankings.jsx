@@ -31,7 +31,7 @@ function Rankings() {
                     CLASIFICACIÓN DE LOS ATLETAS
                 </h1>
 
-                <div className="grid grid-cols-4 peleadores-auto-fit gap-5 max-w-[1500px] my-10 mx-auto px-5">
+                <div className="grid grid-cols-1 md:grid-cols-4 peleadores-auto-fit gap-5 max-w-[1500px] my-10 mx-auto px-5">
 
                     {/* ---------- RENDER DINÁMICO ---------- */}
                     {rankings.map((categoria, index) => {
@@ -45,7 +45,7 @@ function Rankings() {
                         const champImg = champData?.imgUrl;
 
                         return (
-                            <div key={index} className="bg-gray-50 rounded-xl p-4 shadow-sm min-h-[200px] flex flex-col transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-[4px]">
+                            <div key={index} className="flex items-center bg-gray-50 rounded-xl p-4 shadow-sm min-h-[200px] flex flex-col transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-[4px]">
                                 <h2 className="text-xl text-red-700 mb-3 font-bold">
                                     {categoria.categoryName}
                                 </h2>
