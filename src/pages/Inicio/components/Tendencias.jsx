@@ -48,7 +48,7 @@ function Tendencias(){
                 </a>
             </div>
 
-            <div className="section-2 flex justify-center w-full h-[500px] space-x-6 px-4 mt-7">
+            <div className="section-2 flex justify-center  w-full h-[500px] space-x-6 px-4 mt-7">
                 <a 
                     href="https://www.espn.com.gt/mma/nota?_slug_=jon-jones-pereira-aspinall-ufc&id=14416434"
                     target="_blank"
@@ -73,18 +73,18 @@ function Tendencias(){
             </div>
 
             <h1 className="font-bold text-center text-black text-3xl mt-8 mb-4">PATROCINADORES</h1>
-            <div className="flex w-full h-[300px] overflow-hidden space-x-2.5 px-4">
+            <div className="flex flex-col md:flex-row w-full h-auto overflow-hidden gap-4 px-4">
                 <a 
                     href="https://airestech.com/?utm_source=UFC&utm_medium=ROS&utm_campaign=Maycee_Chandler"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-1/2"
+                    className="w-full"
                 >
-                    <div className="h-[300px] cursor-pointer">
+                    <div className="cursor-pointer">
                         <img 
                             src={UFCAires}
                             alt="UFC AIRES" 
-                            className="w-full h-full object-cover transition-transform duration-500 ease-in-out" 
+                            className="w-full h-full md:h-[370px] object-contain md:object-cover transition-transform duration-500 ease-in-out" 
                         />
                     </div>
                 </a>
@@ -93,13 +93,13 @@ function Tendencias(){
                     href="https://airestech.com/?utm_source=UFC&utm_medium=ROS&utm_campaign=Maycee_Chandler"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-[50%]"
+                    className="w-full"
                 >
-                    <div className="h-[300px] cursor-pointer">
+                    <div className="cursor-pointer">
                         <img 
                             src={UFCAviator}
                             alt="UFC AIRES" 
-                            className="w-full h-full object-cover transition-transform duration-500 ease-in-out" 
+                            className="w-full h-full md:h-[370px] object-contain md:object-cover transition-transform duration-500 ease-in-out" 
                         />
                     </div>
                 </a>
